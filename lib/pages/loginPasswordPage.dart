@@ -289,24 +289,29 @@ class _LoginPasswordPageState extends State<LoginPasswordPage> {
 
                         SizedBox(height: MediaQuery.of(context).size.height * 0.1),
 
-                        RichText(
-                          text: TextSpan(
-                            text: 'I don’t have an account? ',
-                            style: TextStyle(
-                              color: Colors.white24,
-                              fontSize: 16.0,
-                            ),
-                            children: <TextSpan>[
-                              TextSpan(
-                                text: 'Register',
-                                style: TextStyle(
-                                  color: Color(0xFFFFFFFF),
-                                  fontSize: 16.0,
-                                )
+                        InkWell(
+                          onTap: () {
+                            Navigator.of(context).pushNamed('/signUp');
+                          },
+                          child: RichText(
+                            text: TextSpan(
+                              text: 'I don’t have an account? ',
+                              style: TextStyle(
+                                color: Colors.white24,
+                                fontSize: 16.0,
                               ),
-                            ]
+                              children: <TextSpan>[
+                                TextSpan(
+                                  text: 'Register',
+                                  style: TextStyle(
+                                    color: Color(0xFFFFFFFF),
+                                    fontSize: 16.0,
+                                  )
+                                ),
+                              ]
+                            )
                           )
-                        )
+                        ),                        
                       ],
                     ),
                   ),

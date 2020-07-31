@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:live_vend/pages/loginPasswordPage.dart';
+import 'package:live_vend/pages/signUp.dart';
+import 'package:live_vend/pages/signUpCompanyName.dart';
+import 'package:live_vend/pages/signUpEmailPage.dart';
+import 'package:live_vend/pages/signUpPassword.dart';
+import 'package:live_vend/pages/signUpPhonePage.dart';
 import './pages/login.dart';
 
 void main() {
@@ -16,6 +21,11 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/loginPassword': (BuildContext context) => LoginPasswordPage(),
+        '/signUp': (BuildContext context) => SignUp(),
+        '/signUpEmailPage': (BuildContext context) => SignUpEmailPage(),
+        '/signUpPhonePage': (BuildContext context) => SignUpPhonePage(),
+        '/signUpCompanyNamePage': (BuildContext context) => SignUpCompanyNamePage(),
+        '/signUpPasswordPage': (BuildContext context) => SignUpPasswordPage(),
       },
       theme: ThemeData(
         fontFamily: 'CircularStd',
